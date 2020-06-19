@@ -1,0 +1,65 @@
+$bg-color: #543211
+$color-black: #111000
+
+.sidebar
+	background: $bg-color
+
+aside 
+	height: 100%
+	width: 80px
+	background: $color-black
+	padding-top: 20px
+
+	a
+		display: block
+		padding: 10px
+		text-align: center
+		text-decoration: none
+		color: #fff
+
+		i
+			font-size: 20px
+
+nav
+	width: 100%
+	padding-top: 20px
+
+
+ul 
+	list-style: none
+	margin: 0
+	padding: 0
+
+	li a
+		display: block
+		padding: 10px 25px
+		transition: .3s ease
+		font-size: 1rem
+		font-weight: 500
+		color: #111
+
+	li a:hover
+		background: $bg-color
+		text-decoration: none
+		color: #fff
+		font-size: 18px
+
+	li a.active
+		color: #FFF
+		border-right: 2px solid red
+		font-weight: 600
+
+	li a.active:hover
+			color: #fff
+
+input, select 
+	border-left: 5px solid $bg-color
+	border-top-left-radius: 5px
+	border-bottom-left-radius: 5px
+
+.space-up
+	margin-top: 5em
+	
+.btn-color
+	background: $bg-color
+	color: #fff

@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+	
+	<div class="col-lg-4" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+
+		<div class="mb-4">
+			<app-toast></app-toast>
+		</div>
+
+		<div class="card shadow">
+			<div class="card-body">
+				<h4 class="card-title">Add Student</h4>
+				<span class="line mb-5"></span>
+
+				<form [formGroup]="addForm" (ngSubmit)="addStudent(addForm.value)" id="payForm">
+					<div class="form-group">
+						<label for="" class="sr-only">Matric</label>
+						<input type="text" name="matric" formControlName="matric" class="form-control form-control-lg" placeholder="Matric Number">
+					</div>
+
+					<div class="form-group">
+						<label for=" " class="sr-only">Session</label>
+						<input type="text" name="" formControlName="session" class="form-control form-control-lg" placeholder="Session">
+					</div>
+
+					<div class="form-group">
+						<label for="" class="sr-only">Amount</label>
+						<input type="text" name="" formControlName="amount" class="form-control form-control-lg" placeholder="Amount">
+					</div>
+
+					<div class="form-group">
+						<label for="" class="sr-only">Department</label>
+						<input type="text" name="" formControlName="department" class="form-control form-control-lg" placeholder="Department">
+					</div>
+
+					<button class="btn btn-color mt-4 px-5">Add</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
